@@ -1,0 +1,268 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.2 (25/3/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same
+% directory as this .tex file. These files provide the resume style and themes
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+\PassOptionsToPackage{pdfpagelabels=false}{hyperref}
+\RequirePackage[]{silence}
+
+\WarningsOff[hyperref]
+
+\documentclass[10pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+
+\DeclareOldFontCommand{\rm}{\normalfont\rmfamily}{\mathrm}
+\DeclareOldFontCommand{\sf}{\normalfont\sffamily}{\mathsf}
+\DeclareOldFontCommand{\tt}{\normalfont\ttfamily}{\mathtt}
+\DeclareOldFontCommand{\bf}{\normalfont\bfseries}{\mathbf}
+\DeclareOldFontCommand{\it}{\normalfont\itshape}{\mathit}
+\DeclareOldFontCommand{\sl}{\normalfont\slshape}{\@nomath\sl}
+\DeclareOldFontCommand{\sc}{\normalfont\scshape}{\@nomath\sc}
+\DeclareRobustCommand*\cal{\@fontswitch\relax\mathcal}
+\DeclareRobustCommand*\mit{\@fontswitch\relax\mathnormal}
+
+\moderncvstyle{oldstyle} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{grey} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+%\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{pdfpages}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{amsmath}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}% http://ctan.org/pkg/hyperref
+\hypersetup{
+    colorlinks=true,
+    linkcolor=green!70!black,
+    urlcolor=blue!50!red
+}
+
+
+\usepackage[scale=0.93]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Topi} % Your first name
+\familyname{Korhonen} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{Stagnellsgatan 9, 1201}{65223 Karlstad, Sweden}
+\mobile{+358 40 1547447}
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+\email{topiko1987@gmail.com}
+%\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{1987}
+\photo[70pt][0.2pt]{topi_small.png} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+\quote{``Space is blue and birds fly through it.'' - Werner Heisenberg} %\small  "The world is like a ride in an amusement park, and when you choose to go on it you think it's real because that's how powerful our minds are. The ride goes up and down, around and around, it has thrills and chills, and it's very brightly colored, and it's very loud, and it's fun for a while. Many people have been on the ride a long time, and they begin to wonder, "Hey, is this real, or is this just a ride?" - Bill Hicks}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+\iffalse
+\clearpage
+
+\recipient{Application for the position of XXX}{COMPANYt, to whom it may concern} % Letter recipient
+\date{\today} % Letter date
+\opening{} % Opening greeting
+\closing{Best regards,} % Closing phrase
+
+\makelettertitle % Print letter title
+
+
+
+
+{\bf Selected}
+\begin{itemize}
+	\item[-] Lead data scientist working with time series classification on embedded devices.
+	\item[-] PhD in computational physics (2016). Master in theoretical physics (2012). Working in Dept. of Computer sciences since 2017-2022.
+	\item[-] Very experienced in Python (\texttt{pandas, sklearn, numpy, scipy, sympy, pytorch, tensorflow, fastai,...}), Linux, \LaTeX, git, vim\dots %, etc.. Knowledge in C/C++.
+	\item[-] Some experience in \texttt{c++}, machine vision, probability theory (Bayesian methods), information theory\dots
+	\item[-] Highly motivated in work aligned with personal values and eager to learn new.
+	\item[-] Social and easygoing father of two amazing daughters.
+\end{itemize}
+
+
+
+
+
+
+\makeletterclosing % Print letter signature
+
+\newpage
+\fi
+
+% \iffalse
+
+%----------------------------------------------------------------------------------------
+%	CURRICULUM VITAE
+%----------------------------------------------------------------------------------------
+
+\makecvtitle % Print the CV title
+
+
+
+%
+With background first in theoretical -and subsequently in computational physics I have a solid base for many data science related tasks both from theoretical and computational perspectives. For the past eight years I have been involved in various machine learning -/data science projects, ranging from model inference speed optimization to complex classification tasks in embedded resource constrained environments.
+
+\section{Current position}
+
+
+\cventry{2024--current}{Data Scientist}{Two Hands Consulting AB}{Sweden}{}{ As of autumn 2024 I have started to work as an independet consultant in the field of data science/machine learning. Currently my clients are in the fields of gesture recognition and internet traffic obfuscation.}
+
+\section{Experience}
+
+\cventry{2022--2024}{Lead Data Scientist}{Doublepoint}{Helsinki}{}{Leading a team of five people tasked to develop and implement real time inference machine learning models on (custom made) embedded devices for gesture recognition. We work in close collaboration with the devices and data collection teams who provide the hardware and data.}
+\cventry{2021--2022}{Data Scientist}{Doublepoint}{Helsinki}{}{Development and implementation (from data collection to deployment on smartwatches) of machine learning models for \href{https://www.theverge.com/2024/1/13/24037132/wowmouse-wear-os-samsung-galaxy-watch-bluetooth-mouse-gesture-control-doublepoint}{gesture recognition} on wearable devices.}
+\cventry{2017--2021}{Project researcher/Research Assistant}{Karlstad University, Department of Computer Sciences}{Karlstad}{}{Development and implementation of novel machine learning based approach for network traffic classification and study of explainable machine learning.}
+
+\cventry{2018--}{Research papers in machine learning}{}{}{}{
+\begin{itemize}
+	\item[I] J. Garcia and T. Korhonen, \emph{Exploring Ranked Local Selectors for Stable Exp lanations of ML Models} IJCNN, (2021), doi: \url{https://doi.org/10.1109/IDSTA53674.2021.9660809}
+\item[II] J. Garcia and T. Korhonen, \emph{Efficient Distribution-Derived Features for High-Speed Encrypted Flow Classification} ACM SIG-COMM 2018, 21-27 (2018), doi: \url{https://doi.org/10.1145/3229543.3229548}
+\item[III] J. Garcia and T. Korhonen, \emph{Towards Video Flow Classification at a Million Encrypted Flows Per Second} AINA, 358-365 (2018), doi: \url{https://doi.org/10.1109/AINA.2018.00061}
+\item[IV] J. Garcia and T. Korhonen, \emph{On Runtime and Classification Performance of the
+	Discretize-Optimize (DISCO) Classification Approach} WAIN, (2018) doi: \url{https://doi.org/10.1145/3308897.3308965}
+\item[V] J. Garcia and T. Korhonen, \emph{DIOPT: Extremely Fast Classification Using Lookups and Optimal Feature Discretization} IJCNN, (2020), doi: \url{https://doi.org/10.1109/IJCNN48605.2020.9207037}
+\end{itemize}
+}
+
+\cventry{2021}{Research papers in applied mathematics}{}{}{}{
+	\begin{itemize}
+		\item[I] Computational study of the effect of hypoxia on cancer response to radiation treatment, Accepted 2021. doi: \url{https://doi.org/10.1101/2020.10.21.348474 }
+	\end{itemize}
+}
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2012--2016}{Doctor of Philosophy, Physics}{University of Jyv\"askyl\"a}{Jyv\"askyl\"a}{\href{http://urn.fi/URN:ISBN:978-951-39-6693-5}{\emph{Modeling the mechanical behavior of carbon nano structures}}}{}
+
+\cventry{2007--2012}{Master of Philosophy, Theoretical physics}{University of Jyv\"askyl\"a}{Jyv\"askyl\"a}{\emph{Many-particle approach to lead-molecule interactions and to the image-charge effect}}{}
+
+\cventry{2017}{Data-analytics related studies}{Coursera, University of Michigan}{Applied Data Science with Python}{}{}
+%\cventry{2003--2006}{Undergraduate}{High school of Varkaus}{Varkaus}{}{}  % arguments 3 to 6 can be left empty
+%\cventry{2011--2012}{Masters of Commerce}{The University of California}{Berkeley}{\textit{GPA -- 8.0}}{First Class Honors}  % Arguments not required can be left empty
+%\cventry{2007--2010}{Bachelor of Business Studies}{The University of California}{Berkeley}{\textit{GPA -- 7.5}}{Specialized in Commerce}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Computer skills}
+
+\cvitem{Advanced}{Linux, \textsc{Python} (\texttt{pip, conda, numpy, pandas, scipy, matplotlib, pyplot, seaborn, sklearn, tensorflow, pytorch}), \LaTeX, vim, git}
+\cvitem{Good}{\texttt{bash}, \textsc{c/c++}, hydra, mlflow} %, Microsoft Windows}
+
+My personal \href{https://github.com/topiko}{git page} with hobby projects.
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+
+%------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\iffalse
+\section{Languages}
+
+\cvitemwithcomment{Finnish}{Mother tongue}{}
+\cvitemwithcomment{English}{Fluent}{}
+\cvitemwithcomment{Swedish}{Intermediate}{}
+
+
+
+\section{Publications physics}
+
+
+\cventry{2012--2016}{Research papers in computational physics}{}{}{}{
+\begin{itemize}
+\item[I] T. Korhonen and P. Koskinen, \emph{Electronic structure trends of M\"obius graphene nanoribbons from minimal-cell simulations} Computational Materials Science {\bf 81}, 264-268 (2014).
+\item[II] T. Korhonen and P. Koskinen, \emph{Electromechanics of graphene spirals} AIP Advances, {\bf 4}, 12 (2014).
+\item[III] T. Korhonen and P. Koskinen, \emph{Peeling of multilayer graphene creates complex interlayer sliding patterns} Phys. Rev. B {\bf 92}, 115427 (2015).
+\item[IV] T. Korhonen and P. Koskinen, \emph{Limits of stability in supported graphene nanoribbons subject to bending} Phys. Rev. B {\bf 93}, 245405 (2016).
+\item[V] P. Koskinen and T. Korhonen, \emph{Plenty of motion at the bottom: atomically thin liquid gold membrane} Nanoscale {\bf 7}, 10140-10145 (2015).
+\item[VI] P. My\"oh\"anen, R. Tuovinen, T. Korhonen, G. Stefanucci, and R. van Leeuwen, \emph{Image charge dynamics in time-dependent quantum transport} Phys. Rev. B. {\bf 85}, 075105 (2012)
+\end{itemize}
+}
+
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+
+    \section{Interests}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\cvlistitem{Sailplane flying, sailing.}
+\cvlistitem{Machine learning and AI, 3D-printing/cnc, electronics, microcontrollers, and robotics.}
+\cvlistitem{Guitar playing and making}
+\cvlistitem{Running, skiing}
+
+
+%----------------------------------------------------------------------------------------
+
+%\newpage
+%\includepdf[pages={-}]{pekka.pdf}
+%\newpage
+%\includepdf[pages={-}]{robert.pdf}
+
+\fi
+
+\end{document}
